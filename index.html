@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>お金と経済を、煽らず正直に。</h1>
+  <p class="lead">マクロ経済の話題から、手取り・新NISA・ふるさと納税の計算ツールまで。むずかしいお金の話を、できるだけやさしく。</p>
+</section>
+
+<section class="post-list">
+  <h2 class="section-title">新着記事</h2>
+  {% for post in site.posts %}
+  <article class="post-card">
+    <a class="post-card-link" href="{{ post.url | relative_url }}">
+      <time class="post-card-date">{{ post.date | date: "%Y.%-m.%-d" }}</time>
+      <h3 class="post-card-title">{{ post.title }}</h3>
+      <p class="post-card-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
+    </a>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="tool-links">
+  <h2 class="section-title">計算ツール</h2>
+  <div class="tool-grid">
+    <a class="tool-card" href="{{ '/tedori/' | relative_url }}">給与の手取り計算</a>
+    <a class="tool-card" href="{{ '/nisa/' | relative_url }}">新NISA つみたて</a>
+    <a class="tool-card" href="{{ '/fukugyou/' | relative_url }}">副業・投資の税金</a>
+    <a class="tool-card" href="{{ '/furusato/' | relative_url }}">ふるさと納税</a>
+  </div>
+</section>

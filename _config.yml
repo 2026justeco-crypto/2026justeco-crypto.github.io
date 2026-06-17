@@ -1,0 +1,24 @@
+title: "Justeco お金と経済ノート"
+description: "経済をやさしく、煽らず正直に。副業の税金・新NISA・手取り・ふるさと納税の計算ツール付き個人メディア。"
+author: "ユース（Justeco）"
+lang: ja
+timezone: Asia/Tokyo
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
+
+# 自前レイアウトを使うためテーマは無し（GitHub Pages標準ビルド）
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# ビルド対象外
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

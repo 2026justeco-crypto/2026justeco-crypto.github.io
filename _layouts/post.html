@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-meta">
+    <span class="post-author">{{ page.author | default: site.author }}</span>
+    <time datetime="{{ page.date | date_to_xmlschema }}">公開 {{ page.date | date: "%Y年%-m月%-d日" }}</time>
+    {% if page.updated %}<time class="post-updated">最終更新 {{ page.updated | date: "%Y年%-m月%-d日" }}</time>{% endif %}
+  </p>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <p class="post-footnote">※この記事は最新情報に合わせて加筆・修正することがあります。内容に誤りや古い点があれば<a href="{{ '/contact/' | relative_url }}">お問い合わせ</a>からお知らせください。</p>
+
+  <p class="post-back"><a href="{{ '/' | relative_url }}">← ブログ一覧へ</a></p>
+</article>

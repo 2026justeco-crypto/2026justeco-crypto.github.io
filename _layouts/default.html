@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}｜{{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">ブログ</a>
+      <a href="{{ '/tedori/' | relative_url }}">手取り計算</a>
+      <a href="{{ '/nisa/' | relative_url }}">新NISA</a>
+      <a href="{{ '/fukugyou/' | relative_url }}">副業の税金</a>
+      <a href="{{ '/furusato/' | relative_url }}">ふるさと納税</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="disclaimer">本サイトの内容は一般的な情報提供であり、特定の投資・行動を推奨するものではありません。記載の数値は概算・執筆時点のもので、正確・最新の情報は必ず公式情報をご確認ください。投資の判断はご自身の責任でお願いします。</p>
+    <nav class="footer-nav">
+      <a href="{{ '/about/' | relative_url }}">運営者について</a>
+      <a href="{{ '/privacy/' | relative_url }}">プライバシーポリシー</a>
+      <a href="{{ '/contact/' | relative_url }}">お問い合わせ</a>
+      <a href="{{ '/disclaimer/' | relative_url }}">免責事項</a>
+    </nav>
+    <p class="copyright">© {{ site.title }}</p>
+  </div>
+</footer>
+</body>
+</html>
