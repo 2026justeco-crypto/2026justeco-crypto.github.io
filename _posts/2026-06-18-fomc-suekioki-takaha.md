@@ -55,6 +55,6 @@ tags: [FOMC, 米国経済, 為替, 金利]
 *これは個人の見解であり、特定の金融商品の売買をすすめるものではありません。投資は最終的にご自身の判断と責任でお願いします。*
 
 **参考にした情報**
-- FOMC声明 2026年6月17日（米連邦準備制度） https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm
-- FOMCが金利維持、見通し分かれる・物価予測上方修正（Bloomberg） https://www.bloomberg.com/jp/news/articles/2026-06-17/TGSFDYT96OSG00
-- タカ派受けドル高、円は160円台（Investing.com） https://www.investing.com/news/forex-news/dollar-strong-after-hawkish-fed-signals-yen-slips-past-160-as-iran-fears-grow-4647654
+- [FOMC声明 2026年6月17日（米連邦準備制度）](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm)
+- [FOMCが金利維持、見通し分かれる・物価予測上方修正（Bloomberg）](https://www.bloomberg.com/jp/news/articles/2026-06-17/TGSFDYT96OSG00)
+- [タカ派受けドル高、円は160円台（Investing.com）](https://www.investing.com/news/forex-news/dollar-strong-after-hawkish-fed-signals-yen-slips-past-160-as-iran-fears-grow-4647654)
